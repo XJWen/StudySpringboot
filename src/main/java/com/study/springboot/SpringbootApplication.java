@@ -1,5 +1,6 @@
 package com.study.springboot;
 
+import com.study.springboot.config.ProConfig;
 import com.study.springboot.properties.AuthorSettings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringbootApplication {
     @RequestMapping("/")
     public String index(){
+        ProConfig.propertySourcesPlaceholderConfigurer();
         return "Hello springboot";
     }
-
 
     @Value("${book.author}")
     private String author;

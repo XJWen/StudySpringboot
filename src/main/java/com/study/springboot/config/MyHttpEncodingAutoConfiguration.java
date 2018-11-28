@@ -1,4 +1,4 @@
-package com.study.springboot.bean;
+package com.study.springboot.config;
 
 import com.study.springboot.properties.MyHttpEncodingProperties;
 import org.springframework.beans.factory.annotation.Autowired;
